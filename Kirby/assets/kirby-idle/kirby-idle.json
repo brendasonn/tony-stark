@@ -1,0 +1,119 @@
+{
+"frames": [{
+	
+	"filename": "kirby_01.png",
+	"position": {
+		"x": 0,
+		"y": 0,
+		"w": 22,
+		"h": 24
+	},
+	
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+		"sourceSize": {"w":22,"h":24},
+		"pivot": {"x":0.5,"y":0.5}
+},
+
+{
+	"filename": "kirby_02.png",
+	"position": {"x":22,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kirby_03.png",
+	"position": {"x":44,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kirby_04.png",
+	"position": {"x":66,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kirby_05 copy 2.png",
+	"frame": {"x":88,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kirby_05 copy 3.png",
+	"position": {"x":110,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kirby_05 copy.png",
+	"position": {"x":132,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kirby_05.png",
+	"position": {"x":154,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kirby_06.png",
+	"frame": {"x":176,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kirby_07.png",
+	"position": {"x":198,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "kirby_08.png",
+	"position": {"x":220,"y":0,"w":22,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+	"sourceSize": {"w":22,"h":24},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "kirble-idle.png",
+	"format": "RGBA8888",
+	"size": {"w":242,"h":24},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:957f78c14cadd4de94330904c5fb8c49:248604e3abff91b281a647b10c96db82:0971da643387a5450ee4fad59fac0ef0$"
+}
+}
