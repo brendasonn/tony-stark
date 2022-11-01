@@ -74,7 +74,7 @@ function startGame() {
   textStyle(NORMAL);
   text("Score: " + score, 50, 20);
 
-  //change the y value
+  //change the x value
   x -= speed;
 
   //circle that moves
@@ -88,8 +88,7 @@ function startGame() {
   if (x < 0) {
     screen = 2;
   }
-  //when you successfully earn a point, the speed increases
- // if (y > height - 30 && x > mouseX - 20 && x < mouseX + 20) {
+  //when you successfully earn a point, the speed increasesß
 
   if (x < 30 && y > mouseY - 20 && y < mouseY + 20) {
     x = width;
@@ -112,7 +111,7 @@ function endGame() {
 
 //restart function 
 function restart() {
-  //x = 0;
+  x = 300;
   speed = 2;
   score = 0;
 }
