@@ -7,12 +7,13 @@ let screen = 0;
 let kirby = 0
 
 function setup() {
+  bg = loadImage('assets/kirby-house.png');
   createCanvas(600, 400);
 }
 
 
 function draw() {         //which screen to display
-  background(0);
+  background(bg);
   
   //using strict equality operator to match what screen is being shown
   if (screen === 0) {
@@ -36,17 +37,16 @@ function mousePressed() {  //what happens when you click on the canvas
     screen = 0;            //change to game starting screen (starting the game again)
   }
 
-
-  if (screen ===1) {       // then kirby animation should inhale when catching ?
-    if (kirby == 0) {}     //change kirby animation state 
-    else
-    }
-  }
 }
 
 
+  // if (screen === 1) {       // then kirby animation should inhale when catching ?
+  //   if (kirby == 0) {}     //change kirby animation state 
+  //   }
+
+
 function startScreen() {   //what to display at the start
-  background(70);
+  background(255, 195, 219);
   fill(255);
   textAlign(CENTER);
   textSize(20);
@@ -58,11 +58,15 @@ function startScreen() {   //what to display at the start
 
 //Function for the game
 function startGame() {
+  //background
+  background(bg);
+
   //rectangle 
-  background(0);
   rectMode(CENTER);
   fill(255);
-  rect(mouseX, height - 20, 30,30);  
+  //rect(mouseX, height - 20, 30,30);  
+  rect(15, mouseY, 30,30); 
+
 
   //score text
   fill(255);
@@ -71,7 +75,7 @@ function startGame() {
   text("Score: " + score, 50, 20);
 
   //change the y value
-  y += speed;
+  x -= speed;
 
   //circle that moves
 
@@ -81,31 +85,34 @@ function startGame() {
   circle(x, y, 25);
 
   //screen to display when the ball goes out of the canvas
-  if (y > height) {
+  if (x < 0) {
     screen = 2;
   }
   //when you successfully earn a point, the speed increases
-  if (y > height - 30 && x > mouseX - 20 && x < mouseX + 20) {
-    y = 0;
+ // if (y > height - 30 && x > mouseX - 20 && x < mouseX + 20) {
+
+  if (x < 30 && y > mouseY - 20 && y < mouseY + 20) {
+    x = width;
     score++;            
     speed += 0.5;
-    x = random(width);
+    y = random(height);
   }
 }
 
 //endgame screen 
+
 function endGame() {
-  background(255, 0, 0);
+  background(0);
   noStroke();
   textAlign(CENTER);
-  text("you lost :(", width / 2, height / 2);
-  text("score:" + score, width / 2, height / 2 + 20) ;
-  text("[click to play again]", width / 2, height / 2 + 40);
+  text(":(", width / 2, height / 2);
+  text("score: " + score, width / 2, height / 2 + 100) ;
+
 }
 
 //restart function 
 function restart() {
-  y = 0;
+  //x = 0;
   speed = 2;
   score = 0;
 }
